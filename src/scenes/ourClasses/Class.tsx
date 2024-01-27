@@ -5,7 +5,7 @@ type ClassProps = {
 };
 function Class({ item }: ClassProps) {
   const { image, name, description } = item;
-  const overlayStyles = `px-5 absolute z-20 flex gap-2 h-[335px] w-[446.67px] flex-col items-center justify-center rounded-md
+  const overlayStyles = `px-5 absolute z-20 flex gap-2 h-[338px] w-[450px] flex-col items-center justify-center rounded-md
   whitespace-normal bg-primary-500 text-white opacity-0 transition duration-500 hover:opacity-90 `;
   return (
     <li className="relative inline-block h-[335px]">
