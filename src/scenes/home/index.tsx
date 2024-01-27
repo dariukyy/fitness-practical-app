@@ -36,7 +36,11 @@ function Home() {
           >
             <div className="relative">
               <div className="before:absolute before:z-[-1] before:-left-20 before:-top-20 md:before:content-evolvedtext">
-                <img alt="Home-page-text" src={HomePageText} />
+                <img
+                  className="w-auto"
+                  alt="Home-page-text"
+                  src={HomePageText}
+                />
               </div>
             </div>
             <p className="mt-8 text-sm">
@@ -62,7 +66,7 @@ function Home() {
           </motion.div>
         </div>
         {/* IMAGE */}
-        <div className="flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-items-end">
+        <div className="basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-items-end">
           <img src={HomePageGraphic} alt="Home-pageGraphic-img" />
         </div>
       </motion.div>

@@ -11,6 +11,7 @@ function App() {
       <NavBar />
       <Home />
       <Benefits />
+
       <OurClasses />
       <ContactUs />
       <Footer />

@@ -86,17 +86,17 @@ function OurClasses() {
         <div className="relative">
           <ChevronLeftIcon
             onClick={slideLeft}
-            className={`${showLeftArrow ? "block" : "hidden"} absolute top-[40%] md:left-5 left-3 h-11 md:h-16 bg-primary-100 rounded-full opacity-50 hover:opacity-100 cursor-pointer duration-300 z-30`}
+            className={`${showLeftArrow ? "block" : "hidden"} absolute top-[40%] md:left-[3.25rem] left-[3rem] h-11 md:h-16 bg-primary-100 rounded-full opacity-50 hover:opacity-100 cursor-pointer duration-300 z-30`}
           />
           <ChevronRightIcon
             onClick={slideRight}
-            className={`absolute top-[40%] right-3 md:right-5 z-30 h-11 md:h-16  bg-primary-100 rounded-full opacity-50 hover:opacity-100 cursor-pointer duration-300 ${showRightArrow ? "block" : "hidden"}`}
+            className={`absolute top-[40%] right-[4rem] md:right-[3.25rem] z-30 h-11 md:h-16  bg-primary-100 rounded-full opacity-50 hover:opacity-100 cursor-pointer duration-300 ${showRightArrow ? "block" : "hidden"}`}
           />
           <div
             ref={sliderRef}
             className="mt-12 h-[353px] w-full overflow-x-auto no-scrollbar overflow-y-hidden"
           >
-            <ul className="w-[2800px] scroll-smooth whitespace-nowrap gap-4 flex px-5 justify-between">
+            <ul className="w-[2800px] scroll-smooth whitespace-nowrap gap-4 flex pl-5 justify-between">
               {classes.map((item: ClassType, index) => (
                 <Class item={item} key={index} />
               ))}
