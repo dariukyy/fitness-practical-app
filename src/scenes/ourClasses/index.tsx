@@ -86,11 +86,11 @@ function OurClasses() {
         <div className="relative">
           <ChevronLeftIcon
             onClick={slideLeft}
-            className={`${showLeftArrow ? "block" : "hidden"} absolute top-[40%] md:left-[3.25rem] left-[3rem] h-11 md:h-16 bg-primary-100 rounded-full opacity-50 hover:opacity-100 cursor-pointer duration-300 z-30`}
+            className={`${showLeftArrow ? "block" : "hidden"} absolute top-[40%] md:left-4 left-2 h-11 md:h-16 bg-primary-100 rounded-full opacity-50 hover:opacity-100 cursor-pointer duration-300 z-30`}
           />
           <ChevronRightIcon
             onClick={slideRight}
-            className={`absolute top-[40%] right-[4rem] md:right-[3.25rem] z-30 h-11 md:h-16  bg-primary-100 rounded-full opacity-50 hover:opacity-100 cursor-pointer duration-300 ${showRightArrow ? "block" : "hidden"}`}
+            className={`absolute top-[40%] right-2 md:right-4 z-30 h-11 md:h-16  bg-primary-100 rounded-full opacity-50 hover:opacity-100 cursor-pointer duration-300 ${showRightArrow ? "block" : "hidden"}`}
           />
           <div
             ref={sliderRef}

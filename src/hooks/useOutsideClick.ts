@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 
 export function useOutsideClick(
   handler: () => void,
-  listeneCapturing: boolean = true
+  listenCapturing: boolean = true
 ) {
   const ref = useRef<HTMLDivElement | null>(null);
 
@@ -18,14 +18,21 @@ export function useOutsideClick(
         handler();
       }
     };
-    document.addEventListener("click", handleClick, listeneCapturing);
+
+    const handleScroll = () => {
+      handler();
+    };
+
+    document.addEventListener("click", handleClick, listenCapturing);
     document.addEventListener("keydown", handleEscapeKey);
+    document.addEventListener("scroll", handleScroll, listenCapturing);
 
     return () => {
-      document.removeEventListener("click", handleClick, listeneCapturing);
+      document.removeEventListener("click", handleClick, listenCapturing);
       document.removeEventListener("keydown", handleEscapeKey);
+      document.removeEventListener("scroll", handleScroll, listenCapturing);
     };
-  }, [handler, listeneCapturing]);
+  }, [handler, listenCapturing]);
 
   return { ref };
 }
