@@ -57,7 +57,7 @@ function OurClasses() {
     useCustomSlider({ sliderRef });
 
   return (
-    <section className="w-full mt-20 bg-primary-100 py-32" id="ourclasses">
+    <section className="w-full bg-primary-100 py-32" id="ourclasses">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.OurClasses)}
         onViewportLeave={() => setSelectedPage(SelectedPage.Benefits)}

@@ -42,7 +42,10 @@ const benefits: Array<BenefitType> = [
 function Benefits() {
   const { setSelectedPage } = useAppContext();
   return (
-    <section id="benefits" className="mx-auto min-h-full w-5/6 py-20">
+    <section
+      id="benefits"
+      className="mx-auto overflow-hidden min-h-full w-5/6 pt-20 pb-[7rem]"
+    >
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
       >
